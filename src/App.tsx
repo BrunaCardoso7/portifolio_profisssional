@@ -2,7 +2,6 @@ import './App.css';
 import Home from './components/Home/Home';
 import LetsTalk from './components/LetsTalk/LetsTalk';
 import Navbar from './components/Navbar/Navbar';
-import TechCarousel from './components/TechCarousel/TechCarousel';
 import Training from './components/Training/Training';
 
 export const App = () => {
