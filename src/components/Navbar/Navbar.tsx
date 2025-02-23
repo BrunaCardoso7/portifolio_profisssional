@@ -15,7 +15,7 @@ export default function Navbar() {
                 </div>
             </div>
             {/* <div className="flex flex-row md:flex-row items-center gap-4"> */}
-                <h2 className="text-xl md:!text-3xl !ml-14 outfit-font-100 text-center md:!text-center">
+                <h2 className="text-xl md:!text-3xl md:!ml-14 outfit-font-100 text-center md:!text-center">
                     Desenvolvedora de Software
                 </h2>
                 <button className="bg-rose-400 !px-4 md:!px-8 !py-2 rounded-full hover:bg-rose-500 transition-colors flex items-center gap-2">

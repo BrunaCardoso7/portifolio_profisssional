@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import TechCarousel from "../TechCarousel/TechCarousel";
 
 export default function Home() {
     return (
-        <div className="w-full h-screen flex  flex-col md:!-mt-30 !items-center !justify-center !md:px-24">
+        <div className="w-full h-screen flex  flex-col !mt-28 md:!-mt-30 !items-center !justify-center !md:px-24">
             {/* Título com animação */}
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -53,16 +54,19 @@ export default function Home() {
                 </motion.div>
 
                 {/* Coluna do Meio (Imagem) - Reordenada apenas para celular */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1, delay: 0.75 }}
-                    className="flex justify-center items-center order-1 md:order-none mt-8 md:mt-0"
-                >
-                    <div className="image !w-72 !h-72 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        {/* Aqui você pode adicionar uma imagem */}
-                    </div>
-                </motion.div>
+                <div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.75 }}
+                        className="flex justify-center items-center order-1 md:order-none  md:mt-0"
+                    >
+                        <div className="image hover:shadow-xl transition-shadow duration-300">
+                            {/* Aqui você pode adicionar uma imagem */}
+                        </div>
+                    </motion.div>
+                    <TechCarousel/>
+                </div>
 
                 {/* Coluna da Direita */}
                 <motion.div
@@ -85,6 +89,7 @@ export default function Home() {
                     </div>
                 </motion.div>
             </div>
+            {/* <TechCarousel/> */}
         </div>
     );
 }

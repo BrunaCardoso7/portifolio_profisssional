@@ -4,7 +4,7 @@ import Portfolio from "../Portifolio/Portifolio";
 
 export default function Training() {
     return(
-        <div className="w-svw h-fit flex flex-col gap-24 !p-14">
+        <div className="w-svw h-fit flex flex-col !mt-18 gap-24 !p-14">
             <div className="w-full !py-4">
                 <p className="text-xl">
                     Como posso ajudar?

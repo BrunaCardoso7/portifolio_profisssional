@@ -13,7 +13,7 @@ interface ProjectProps {
 
 export function Project({ src, title, tech, alt }: ProjectProps) {
     return (
-        <div className="bg-transparent rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-transparent h-full rounded-lg !py-8 overflow-hidden">
         <img src={src} alt={alt} className="w-full h-48 object-cover" />
         <div className="p-4">
             <span className="text-sm text-gray-500">{tech}</span>
@@ -32,22 +32,22 @@ export default function Portfolio() {
         title: 'Ak Modas Beach - Site',
         },
         {
-        src: 'src/assets/Captura de tela de 2025-02-17 23-25-28.png',
-        alt: 'Bead - Vite - Tailwind',
-        tech: 'Vite + Tailwind',
-        title: 'Bead - Vite - Tailwind',
+            src: 'src/assets/Captura de tela de 2025-02-23 01-33-02.png',
+            alt: 'Bead - Vite - Tailwind',
+            tech: 'Vite + Tailwind',
+            title: 'Yumyelp - Aplicativo Mobile',
         },
         {
-        src: 'src/assets/Captura de tela de 2025-02-17 23-25-28.png',
-        alt: 'React Native - Expo - Tailwind',
-        tech: 'React Native + Expo + Tailwind',
-        title: 'React Native - Expo - Tailwind',
-        },
-        {
-        src: 'src/assets/Captura de tela de 2025-02-17 23-25-28.png',
+        src: 'src/assets/Captura de tela de 2025-02-23 01-35-41.png',
         alt: 'Vivido - Aplicativo Mobile',
         tech: 'React Native + Expo',
-        title: 'Vivido - Aplicativo Mobile',
+        title: 'Cultmaps - Site',
+        },
+        {
+        src: 'src/assets/Frame 7 (1).svg',
+        alt: 'React Native - Expo - Tailwind',
+        tech: 'React Native + Expo + Tailwind',
+        title: 'Vivido denuncie - Aplicativo Mobile',
         },
     ];
 
@@ -60,7 +60,7 @@ export default function Portfolio() {
             </p>
             <Swiper
             slidesPerView={1}
-            spaceBetween={20}
+            spaceBetween={50}
             pagination={{
                 clickable: true,
             }}
